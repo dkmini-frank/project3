@@ -19,7 +19,9 @@ function AdminMenuBar() {
                     <Link to="/admin/booking">
                         <NavWrapper.Link href="/admin/booking">Booking</NavWrapper.Link>
                     </Link>
-                    <NavWrapper.Link href="">Customer Management</NavWrapper.Link>
+                    <Link to="/admin/customer">
+                        <NavWrapper.Link href="/admin/customer">Customer Management</NavWrapper.Link>
+                    </Link>
                     <NavWrapper.Link href="">Coffee Management</NavWrapper.Link>
                 </NavWrapper>
                 <NavWrapper>

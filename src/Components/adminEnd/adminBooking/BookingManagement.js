@@ -4,10 +4,10 @@ import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
-import { ReadyBtn, TalbeHeader, TableData } from './customerManageStyled';
+import { ReadyBtn, TalbeHeader, TableData } from './bookingManagementStyled';
 
 
-function CustomerManage() {
+function BookingManagement() {
     return (
         <Container fluid>
             <Row>
@@ -57,4 +57,4 @@ function CustomerManage() {
     )
 }
 
-export default CustomerManage;
+export default BookingManagement;

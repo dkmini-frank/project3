@@ -6,7 +6,8 @@ import Row from 'react-bootstrap/Row';
 import AdminLogin from './Components/adminEnd/adminLogIn/index';
 import AdminHomePage from './Components/adminEnd/adminHomePage/index';
 import AdminMenuBar from './Components/adminEnd/shareComponent/menuBar/index';
-import AdminCustomerManagement from './Components/adminEnd/adminCustomer/CustomerManage';
+import AdminBookingManagement from './Components/adminEnd/adminBooking/index';
+import AdminCustomerManagement from './Components/adminEnd/adminCustomer/index';
 
 class App extends Component {
   render() {
@@ -22,8 +23,9 @@ class App extends Component {
                   <AdminMenuBar />
                 </Row>
                 <Route></Route>
-                <Route path='/admin' exact component={AdminHomePage}></Route>
-                <Route path='/admin/booking' component={AdminCustomerManagement} />
+                <Route path='/admin' exact component={AdminHomePage} />
+                <Route path='/admin/booking' component={AdminBookingManagement} />
+                <Route path='/admin/customer' component={AdminCustomerManagement} />
               </div>
             )}
           />

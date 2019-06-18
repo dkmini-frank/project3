@@ -24,13 +24,15 @@ function Homepage() {
                     </Link>
                 </Col>
                 <Col md={4}>
-                    <SectionWrapper wrapperColor={'rgb(105,189,106)'}>
-                        <IcoWrapper>
-                            <CustomerIcon />
-                        </IcoWrapper>
-                        <CommonTitle>Customer Management</CommonTitle>
-                        <CommonDescribe>Current Customer Number:299</CommonDescribe>
-                    </SectionWrapper>
+                    <Link to="/admin/customer">
+                        <SectionWrapper wrapperColor={'rgb(105,189,106)'}>
+                            <IcoWrapper>
+                                <CustomerIcon />
+                            </IcoWrapper>
+                            <CommonTitle>Customer Management</CommonTitle>
+                            <CommonDescribe>Current Customer Number:299</CommonDescribe>
+                        </SectionWrapper>
+                    </Link>
                 </Col>
                 <Col md={4}>
                     <SectionWrapper wrapperColor={'rgb(90,183,211)'}>
@@ -38,7 +40,7 @@ function Homepage() {
                             <CoffeeIcon />
                         </IcoWrapper>
                         <CommonTitle>Coffee Management</CommonTitle>
-                        <CommonDescribe>Current Coffee Number:200</CommonDescribe>
+                        <CommonDescribe>Current Coffee Number:20</CommonDescribe>
                     </SectionWrapper>
                 </Col>
             </Row>
