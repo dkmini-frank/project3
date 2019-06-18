@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import CustomerManage from './CustomerManage';
+import CustomerManagement from './CustomerManagement';
 
 class AdminCustomerManagement extends Component {
     render() {
         return (
-            <CustomerManage></CustomerManage>
+            <CustomerManagement></CustomerManagement>
         )
     }
 }
