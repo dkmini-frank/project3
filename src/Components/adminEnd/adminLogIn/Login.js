@@ -17,7 +17,7 @@ function LoginPage() {
                         <Input></Input>
                         <InputDescribe>Password:</InputDescribe>
                         <Input type="password"></Input>
-                        <Link to='/admin/homepage'>
+                        <Link to='/admin'>
                             <SubmitBtn variant="primary">Submit</SubmitBtn>
                         </Link>
                     </LoginWraper>
