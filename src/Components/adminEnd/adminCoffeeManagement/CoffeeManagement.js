@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
+import AdminMenuBar from '../shareComponent/menuBar/index';
 
 import { AddBtn, BtnWrapper, TalbeHeader, TableData, EditBtn } from './coffeeManagementStyled';
 
@@ -11,6 +12,9 @@ import { AddBtn, BtnWrapper, TalbeHeader, TableData, EditBtn } from './coffeeMan
 function CoffeeManagement() {
     return (
         <Container fluid>
+            <Row>
+                <AdminMenuBar></AdminMenuBar>
+            </Row>
             <Row>
                 <Col md={12}>
                     <Link to='/admin/coffee/addCoffee'>

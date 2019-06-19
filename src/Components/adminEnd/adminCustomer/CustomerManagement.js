@@ -2,13 +2,16 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
-
+import AdminMenuBar from '../shareComponent/menuBar/index';
 import { TalbeHeader, TableData, BlockBtn } from './customerManagementStyled';
 
 
 function CustomerManagement() {
     return (
         <Container fluid>
+            <Row>
+                <AdminMenuBar></AdminMenuBar>
+            </Row>
             <Row>
                 <Table striped bordered hover size="md">
                     <thead>

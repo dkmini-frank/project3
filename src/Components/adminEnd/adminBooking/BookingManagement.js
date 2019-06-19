@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import AdminMenuBar from '../shareComponent/menuBar/index';
 
 import { ReadyBtn, TalbeHeader, TableData } from './bookingManagementStyled';
 
@@ -10,6 +11,9 @@ import { ReadyBtn, TalbeHeader, TableData } from './bookingManagementStyled';
 function BookingManagement() {
     return (
         <Container fluid>
+            <Row>
+                <AdminMenuBar></AdminMenuBar>
+            </Row>
             <Row>
                 <Table striped bordered hover size="md">
                     <thead>

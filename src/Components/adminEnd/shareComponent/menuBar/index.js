@@ -1,28 +1,28 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import { NavbarWrapper, NavWrapper, RouterLink } from './menuBarStyled';
+import { NavbarWrapper, NavWrapper, RouterLink, NavbarBrandWrapper, NavLinkWrapper } from './menuBarStyled';
 
 
 function AdminMenuBar() {
     return (
         <NavbarWrapper collapseOnSelect expand="lg" bg="dark" variant="dark">
             <RouterLink to="/admin">
-                <NavbarWrapper.Brand href="/home">Coffee Shop</NavbarWrapper.Brand>
+                <NavbarBrandWrapper  >Coffee Shop</NavbarBrandWrapper>
             </RouterLink>
             <NavbarWrapper.Toggle aria-controls="responsive-navbar-nav" />
             <NavbarWrapper.Collapse id="responsive-navbar-nav">
                 <NavWrapper className="mr-auto">
                     <RouterLink to="/admin">
-                        <NavWrapper.Link href="/admin">Home</NavWrapper.Link>
+                        <NavLinkWrapper href="/admin">Home</NavLinkWrapper>
                     </RouterLink>
                     <RouterLink to="/admin/booking">
-                        <NavWrapper.Link href="/admin/booking">Booking</NavWrapper.Link>
+                        <NavLinkWrapper href="/admin/booking">Booking</NavLinkWrapper>
                     </RouterLink>
                     <RouterLink to="/admin/customer">
-                        <NavWrapper.Link href="/admin/customer">Customer Management</NavWrapper.Link>
+                        <NavLinkWrapper href="/admin/customer">Customer Management</NavLinkWrapper>
                     </RouterLink>
                     <RouterLink to="/admin/coffee">
-                        <NavWrapper.Link href="/admin/coffee">Coffee Management</NavWrapper.Link>
+                        <NavLinkWrapper href="/admin/coffee">Coffee Management</NavLinkWrapper>
                     </RouterLink>
                 </NavWrapper>
                 <NavWrapper>

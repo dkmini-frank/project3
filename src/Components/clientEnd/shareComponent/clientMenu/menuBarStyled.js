@@ -3,15 +3,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
 
+
 const NavbarBrand = Navbar.Brand
 const NavLink = Nav.Link
 
 export const NavbarBrandWrapper = styled(NavbarBrand)`
     padding-right: 150px;
-    font-size:30px;
+    height: 40px;
+    font-size:25px;
 `
 export const NavbarWrapper = styled(Navbar)`
-    width: 1850px;
+    width: 100%;
     margin:auto;
     padding-left: 30px;
 `
@@ -21,9 +23,14 @@ export const NavWrapper = styled(Nav)`
     }
 `
 export const NavLinkWrapper = styled(NavLink)`
-    font-size:18px;
-    margin-right: 20px;
+    font-size:22px;
+    margin-right: 50px;
 `
+export const NavLinkWrapperRight = styled(NavLink)`
+    font-size:18px;
+    margin-right: 50px;
+`
+
 export const RouterLink = styled(Link)`
     :hover{
         text-decoration:none;

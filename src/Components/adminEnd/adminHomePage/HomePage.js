@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import AdminMenuBar from '../shareComponent/menuBar/index';
+
 
 import { SectionWrapper, BookingIcon, CommonTitle, CommonDescribe, IcoWrapper, CustomerIcon, CoffeeIcon, RouterLink } from './homePageStyled';
 
@@ -10,6 +12,9 @@ import { SectionWrapper, BookingIcon, CommonTitle, CommonDescribe, IcoWrapper, C
 function Homepage() {
     return (
         <Container fluid>
+            <Row>
+                <AdminMenuBar></AdminMenuBar>
+            </Row>
             <Row>
                 <Col md={4}>
                     <RouterLink to="/admin/booking">
