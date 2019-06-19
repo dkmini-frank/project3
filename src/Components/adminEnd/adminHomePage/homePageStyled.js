@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { MdAssignmentTurnedIn, MdAssignmentInd, MdShoppingCart } from 'react-icons/md';
 
 export const SectionWrapper = styled.div`
@@ -13,6 +14,7 @@ export const SectionWrapper = styled.div`
     :hover{
         margin-top: 70px;
         box-shadow:8px 8px 3px 1px rgba(0, 0, 0, 0.2);
+        text-decoration:none;
     }
 `
 
@@ -41,7 +43,6 @@ export const CommonTitle = styled.h2`
     font-size:20px;
     text-align:center;
     color:black;
-    text-decoration-line:none;
 `
 export const CommonDescribe = styled.h3`
     font-size:25px;
@@ -49,4 +50,9 @@ export const CommonDescribe = styled.h3`
     color:black;
     text-align:center;
     margin-bottom: 30px;
+`
+export const RouterLink = styled(Link)`
+    :hover{
+        text-decoration:none;
+    }
 `

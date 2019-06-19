@@ -28,7 +28,7 @@ function BookingManagement() {
                             <TableData>Frank</TableData>
                             <TableData>0444444444</TableData>
                             <TableData>
-                                Pending
+                                Cooking
                             </TableData>
                         </tr>
                         <tr>
