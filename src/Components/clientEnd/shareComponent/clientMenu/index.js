@@ -1,9 +1,12 @@
 import React from 'react';
-import { NavbarWrapper, NavWrapper, RouterLink, NavbarBrandWrapper, NavLinkWrapper, NavLinkWrapperRight } from './menuBarStyled';
+import { NavbarWrapper, NavWrapper, RouterLink, NavbarBrandWrapper, NavLinkWrapper, NavLinkWrapperRight,
+         FixWrapper
+} from './menuBarStyled';
 
 
 function ClinetMenu() {
     return (
+        <FixWrapper>
         <NavbarWrapper collapseOnSelect expand="lg" bg="dark" variant="dark">
             <RouterLink to="/">
                 <NavbarBrandWrapper  >Coffee Shop</NavbarBrandWrapper>
@@ -14,8 +17,8 @@ function ClinetMenu() {
                     <RouterLink to="/">
                         <NavLinkWrapper href="/">Home</NavLinkWrapper>
                     </RouterLink>
-                    <RouterLink to="/">
-                        <NavLinkWrapper href="/">Menu</NavLinkWrapper>
+                    <RouterLink to="/menu">
+                        <NavLinkWrapper href="/menu">Menu</NavLinkWrapper>
                     </RouterLink>
                     <RouterLink to="/">
                         <NavLinkWrapper href="/">About US</NavLinkWrapper>
@@ -34,6 +37,7 @@ function ClinetMenu() {
                 </NavWrapper>
             </NavbarWrapper.Collapse>
         </NavbarWrapper>
+        </FixWrapper>
     )
 }
 

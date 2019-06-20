@@ -4,6 +4,7 @@ export const FooterWrapper = styled.div`
     height: 80px;
     width: 100%;
     background-color: rgb(53,58,64);
+    margin-top: 50px;
 `
 
 export const FooterTitle = styled.h1`

@@ -11,6 +11,7 @@ import AdminCoffeeManagement from './Components/adminEnd/adminCoffeeManagement/i
 
 // Client Router Component Import Part
 import ClientHomePage from './Components/clientEnd/home/index';
+import ClientMenu from './Components/clientEnd/menu/index';
 
 class HandApp extends Component {
   render() {
@@ -31,10 +32,11 @@ class HandApp extends Component {
             )}
           />
           <Route
-            path='/' exact
+            path='/'
             render={() => (
               <div>
                 <Route path='/' exact component={ClientHomePage} />
+                <Route path='/menu' component={ClientMenu} />
               </div>
             )}
           />

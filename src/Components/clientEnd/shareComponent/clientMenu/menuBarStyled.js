@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Navbar from 'react-bootstrap/Navbar';
+import Row from 'react-bootstrap/Row'
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
 
@@ -7,6 +8,12 @@ import { Link } from 'react-router-dom';
 const NavbarBrand = Navbar.Brand
 const NavLink = Nav.Link
 
+export const FixWrapper = styled(Row)`
+    width:100%;
+    margin:auto;
+    position: fixed;
+    z-index: 10;
+`
 export const NavbarBrandWrapper = styled(NavbarBrand)`
     padding-right: 150px;
     height: 40px;
