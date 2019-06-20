@@ -15,7 +15,7 @@ import natie from '../../../assets/natie.png';
 import maqiduo from '../../../assets/maqiduo.png';
 import americano from '../../../assets/Americano.jpg';
 
-import { BackgroundWrapper, MainTitle, SubTitle, CoffeeItemWrapper, CoffeeItemHoverWrapper } from './menuStyled';
+import { BackgroundWrapper, MainTitle, SubTitle, CoffeeItemWrapper, CoffeeItemHoverWrapper, PlaceHold } from './menuStyled';
 
 function MenuPage() {
     return (
@@ -95,6 +95,9 @@ function MenuPage() {
                         </CoffeeItemHoverWrapper>
                     </CoffeeItemWrapper>
                 </Col>
+            </Row>
+            <Row>
+                <PlaceHold />
             </Row>
             <Row>
                 <ClientFooter></ClientFooter>

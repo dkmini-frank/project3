@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import topBackground from '../../../assets/menu-bg.jpg';
+import topBackground from '../../../assets/aboutUs-bg.jpg';
+import aboutImg from '../../../assets/aboutUs-side.jpg';
 
 export const BackgroundWrapper = styled.div`
     height: 500px;
@@ -12,8 +13,8 @@ export const BackgroundWrapper = styled.div`
     margin-bottom: 80px;
 `
 export const MainTitle = styled.h1`
-    font-size:150px;
-    color:rgb(229,229,229);
+    font-size:130px;
+    color:black;
     font-weight:bolder;
     font-family:Helvetica, sans-serif;
     text-align:center;
@@ -26,22 +27,14 @@ export const SubTitle = styled.h2`
     text-align:center;
     margin-top: 10px;
 `
-export const CoffeeItemWrapper = styled.div`
-    width: 300px;
-    height: 450px;
-    margin:auto;
-    margin-bottom: 20px;
-`
-export const CoffeeItemHoverWrapper = styled.div`
+export const AboutUsImage = styled.div`
+    height: 100%;
     width: 100%;
-    height: 450px;
-    margin:auto;
-    padding-top: 30px;
-    transition: all 0.3s linear;
-    :hover{
-        padding-top: 10px;
-    }
+    background-image: url(${aboutImg});
+    background-repeat: no-repeat;  
+    background-position: center center; 
+    background-size: cover; 
 `
 export const PlaceHold = styled.div`
-    height: 200px;
+    height: 100px;
 `

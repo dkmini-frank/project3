@@ -11,7 +11,7 @@ function ClientFooter() {
         <Container fluid>
             <Row>
                 <FooterWrapper>
-                    <FooterTitle>This Website Is Designed by JR</FooterTitle>
+                    <FooterTitle>This Website Is Designed by Frank</FooterTitle>
                 </FooterWrapper>
             </Row>
         </Container>

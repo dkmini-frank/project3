@@ -12,6 +12,10 @@ import AdminCoffeeManagement from './Components/adminEnd/adminCoffeeManagement/i
 // Client Router Component Import Part
 import ClientHomePage from './Components/clientEnd/home/index';
 import ClientMenu from './Components/clientEnd/menu/index';
+import ClentAboutUs from './Components/clientEnd/about/index';
+import ClientContact from './Components/clientEnd/contact/index';
+import ClientLogin from './Components/clientEnd/logIn/index';
+import ClientCart from './Components/clientEnd/cart/index';
 
 class HandApp extends Component {
   render() {
@@ -37,6 +41,10 @@ class HandApp extends Component {
               <div>
                 <Route path='/' exact component={ClientHomePage} />
                 <Route path='/menu' component={ClientMenu} />
+                <Route path='/aboutus' component={ClentAboutUs} />
+                <Route path='/contact' component={ClientContact} />
+                <Route path='/login' component={ClientLogin} />
+                <Route path='/cart' component={ClientCart}/>
               </div>
             )}
           />

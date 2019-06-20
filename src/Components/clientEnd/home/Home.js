@@ -73,7 +73,7 @@ function HomePage() {
                         from the crowd.
                     </SubTitle>
                     <Row>
-                        <ShareBlackBtn btnTitle={'About Us'} btnLink={'/admin'} />
+                        <ShareBlackBtn btnTitle={'About Us'} btnLink={'/aboutus'} />
                     </Row>
                 </Col>
                 <Col md={{ span: 4 }}>
